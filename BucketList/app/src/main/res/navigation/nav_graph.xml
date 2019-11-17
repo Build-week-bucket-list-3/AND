@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/hostFragment">
+
+    <fragment
+        android:id="@+id/hostFragment"
+        android:name="com.example.bucketlist.fragments.HostFragment"
+        android:label="fragment_host"
+        tools:layout="@layout/fragment_host" >
+        <action
+            android:id="@+id/action_hostFragment_to_navGraphTestFragment"
+            app:destination="@id/navGraphTestFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navGraphTestFragment"
+        android:name="com.example.bucketlist.fragments.NavGraphTestFragment"
+        android:label="fragment_nav_graph_test"
+        tools:layout="@layout/fragment_nav_graph_test" />
+</navigation>
